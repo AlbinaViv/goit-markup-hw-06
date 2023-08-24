@@ -203,10 +203,9 @@ header .container {
 
  /*advan-section*/
 
-.advan-section {
-    display: flex;
+/*.advan-section {
     padding: 120px 0;
-}
+}*/
 
 .advan-list, .team-list, .customers-list {
     display: flex;

@@ -85,7 +85,8 @@ ol {
     max-width: 428px;
     text-align: center;
     background-color: var(--hero-background);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -96,7 +97,8 @@ ol {
 screen and (min-resolution:192dpi),
 screen and (min-resolution: 2dppx) {
    .hero-section {
-       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob@2x.jpg);
+       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+       url(../images/hero-bg-mob@2x.jpg);
    }
 }
 .hero-title {
@@ -146,7 +148,8 @@ screen and (min-resolution: 2dppx) {
      screen and (min-resolution:192dpi),
      screen and (min-resolution: 2dppx) {
    .hero-section {
-       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab@2x.jpg);
+       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+       url(../images/hero-bg-tab@2x.jpg);
    }
 }
 
@@ -162,13 +165,15 @@ screen and (min-resolution: 2dppx) {
     .hero-section {
      max-width: 1440px;
      padding: 188px 0;
-     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg); 
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+     url(../images/hero-bg.jpg); 
     }
     @media screen  and (min-device-pixel-ratio: 2),
      screen and (min-resolution:192dpi),
      screen and (min-resolution: 2dppx) {
    .hero-section {
-       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg@2x.jpg);
+       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg@2x.jpg);
    }
 }
     .hero-title {
@@ -178,7 +183,29 @@ screen and (min-resolution: 2dppx) {
 
  /*advan-section*/
 
+ .advan-section {
+    padding: 96px 0;
+    display: flex;
     
+}
+.advan-list, .team-list, .customers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
     
-   
-    
+} 
+
+@media screen and (min-width: 768px) {
+    .advan-list, .team-list, .customers-list {
+        flex-wrap: wrap; 
+        
+    }
+}
+@media screen and (min-width: 1158px) {
+    .advan-section {
+        padding: 120px 0;
+    }
+    .advan-list, .team-list, .customers-list {
+        
+    }
+}
