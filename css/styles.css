@@ -188,7 +188,7 @@ screen and (min-resolution: 2dppx) {
     
 }
 .advan-list, .team-list, .customers-list {
-    gap: 72px 24px ;
+    gap: 72px 24px;
     
 } 
 .advan-list__item {
