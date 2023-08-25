@@ -262,4 +262,34 @@ screen and (min-resolution: 2dppx) {
     .icon-advan {
         visibility: hidden;
     }
+
+/* ------doing section------*/
+
+.doing-section {
+    padding-bottom: 120px;
+}
+.doing {
+   color: var(--dark);
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.11;
+   letter-spacing: 0.72px;
+   text-transform: capitalize;
+   text-align: center;
+   margin-bottom: 72px;
+}
+
+.list-doing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+    flex-basis: calc(100% - 48px); 
+}
+
+
+ @media screen and (max-width: 1158px) {
     
+    .doing-section {
+        visibility: hidden;
+    }
+}
