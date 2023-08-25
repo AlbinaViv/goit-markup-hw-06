@@ -275,7 +275,7 @@ header .container {
      
  }
   */
- .team {
+ /* .team {
      color: var(--dark);
      font-size: 36px;
      font-style: normal;
@@ -292,8 +292,8 @@ header .container {
      flex-basis: calc((100% - 72px) / 4);
      border-radius: 0px 0px 4px 4px;
      box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-     
- }
+      */
+ /* }
  .title-card {
      padding: 32px 0px;
  }
@@ -315,12 +315,12 @@ header .container {
      margin-bottom: 8px;
  
  }
- 
- .team-job {
+  */
+ /* .team-job {
      color: var(--text);
      font-size: 16px;
      font-weight: 400;
-     line-height: 1.5; /* 1,5 */
+     line-height: 1.5; 
      letter-spacing: 0.02em;
      text-align: center;
      margin-bottom: 8px;
@@ -330,8 +330,8 @@ header .container {
     justify-content: center; 
     gap: 24px;
 }
-
-.link-team-soc{
+ */
+/* .link-team-soc{
     display: flex;
     width: 100%;
     height: 100%;
@@ -348,9 +348,9 @@ header .container {
 
 .link-team-soc:focus {
     background-color: var(--pressed-state);
-}
+} */
 
-.icons-soc-media {
+/* .icons-soc-media {
     display: flex;
     align-items: center;
     width: 40px; 
@@ -365,11 +365,12 @@ header .container {
  .soc_media-icons {
     fill: var(--light);
 
- }
+ } */
 
  
  /* customers section */
-.customers-section {
+
+/* .customers-section {
     display: flex;
     padding: 120px 0;
 }
@@ -418,10 +419,10 @@ header .container {
  .link-client:focus {
     color: var(--pressed-state);
     border-color:var(--pressed-state);
- }
+ } */
 
  /* portfolio buttons sections */
- .butt-section {
+ /* .butt-section {
      padding-top: 96px; 
      padding-bottom: 120px; 
  }
@@ -430,8 +431,8 @@ header .container {
      gap: 24px; 
      margin-bottom: 72px;
      justify-content: center; 
- }
- .card-set-title {
+ } */
+ /* .card-set-title {
      padding: 32px 16px;
      border: 1px solid var(--accent);
      border-top: none; 
@@ -448,9 +449,9 @@ header .container {
     left: 0;
     overflow: hidden;
 
-}
+} */
 
-.overlay {
+/* .overlay {
     position: absolute;
     color: var(--light);
     font-size: 16px;
@@ -477,8 +478,8 @@ header .container {
 }
 .link-cart-set:focus .overlay {
     transform: translateY(0%);
-}
- .all {
+} */
+/*  .all {
      color: var(--primary-dark);
      background-color: var(--light);
      border: 1px solid var(--accent);
@@ -514,10 +515,10 @@ header .container {
      background-color: var(--pressed-state);
      border: 1px solid transparent;
      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
+  } */
  /* cards-section */
  
- .card-name {
+ /* .card-name {
      color: var(--dark);
      font-size: 20px;
      font-style: normal;
@@ -546,7 +547,7 @@ header .container {
 .card-set-item {
     width: calc((100% - 48px) / 3);
     background: var(--white-background);
-}
+} */
 
  /* footer */
  
