@@ -187,8 +187,8 @@ screen and (min-resolution: 2dppx) {
     padding: 96px 0;
     
 }
-.advan-list, .team-list, .customers-list {
-    gap: 72px 24px;
+.advan-list {
+    gap: 72px, 24px;
     
 } 
 .advan-list__item {
@@ -199,7 +199,6 @@ screen and (min-resolution: 2dppx) {
     font-weight: 700;
     line-height: 1.11; 
     letter-spacing: 0.2px;
-    margin-bottom: 8px; 
     font-size: 36px;
     margin-bottom: 8px; 
 
@@ -228,13 +227,12 @@ screen and (min-resolution: 2dppx) {
         justify-content: center;
 
     }
-    .advan-list, .team-list, .customers-list {
+    .advan-list {
         display: flex;
         flex-wrap: wrap;
         
     }
     .advan-list__item {
-        flex-wrap: wrap;
         flex-basis: calc((100% - 1 * 24px) / 2);
      }
 }
@@ -264,7 +262,7 @@ screen and (min-resolution: 2dppx) {
         visibility: hidden;
         display: none;
     }
-
+}
 /* ------doing section------*/
 
 .doing-section {
