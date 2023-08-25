@@ -221,22 +221,20 @@ screen and (min-resolution: 2dppx) {
     }
     .advan-list, .team-list, .customers-list {
         display: flex;
-        flex-wrap: wrap;  
-        flex-basis: calc((100% - 1 * 24px) / 3);
+        
     }
     .advan-list__item {
-        
-
+        flex-wrap: wrap;  
+        flex-basis: calc((100% - 1 * 24px) / 2);
      }
 }
 @media screen and (min-width: 1158px) {
     .advan-section {
         padding: 120px 0;
-    }
-    .advan-list, .team-list, .customers-list {
-        flex-basis: calc((100% - 3 * 24px) / 4);
-    }
+    }        
+    
     .advan-list__item {
+        flex-basis: calc((100% - 3 * 24px) / 4);
        
 
      }
