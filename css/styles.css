@@ -234,6 +234,7 @@ screen and (min-resolution: 2dppx) {
         
     }
     .advan-list__item {
+        flex-wrap: wrap;
         flex-basis: calc((100% - 1 * 24px) / 2);
      }
 }
@@ -261,6 +262,7 @@ screen and (min-resolution: 2dppx) {
 @media screen and (max-width: 1158px) {
     .icon-advan {
         visibility: hidden;
+        display: none;
     }
 
 /* ------doing section------*/
@@ -291,5 +293,6 @@ screen and (min-resolution: 2dppx) {
     
     .doing-section {
         visibility: hidden;
+        display: none;
     }
 }
