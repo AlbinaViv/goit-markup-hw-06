@@ -234,7 +234,7 @@ header .container {
     line-height: 1.5;
     letter-spacing: 0.32px;
 } */
-.icon-advan {
+/* .icon-advan {
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -243,10 +243,10 @@ header .container {
     background-color: var(--light);
     margin-bottom: 8px;
 }
-
+ */
 /* ------doing section------*/
  
-.doing-section {
+/* .doing-section {
     padding-bottom: 120px;
 }
 .doing {
@@ -266,15 +266,15 @@ header .container {
     gap: 24px; 
     flex-basis: calc(100% - 48px); 
 }
-
+ */
   /*team-section*/
   
- .team-section {
+ /* .team-section {
      background-color: var(--light);
      padding: 120px 0;
      
  }
- 
+  */
  .team {
      color: var(--dark);
      font-size: 36px;
