@@ -32,7 +32,7 @@ header .container {
    display: flex;
    align-items: center;
    position: relative; 
-} */
+} 
 .list-mail-tel {
     padding: 24px 0;
     gap: 40px;
@@ -97,7 +97,7 @@ header .container {
     display: flex;
     gap: 40px;
 }
-  */
+ 
 .list-mail-tel:hover {
     color: var(--pressed-state);
 }
