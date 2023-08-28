@@ -91,7 +91,6 @@ ol {
     display: flex;
     align-items: center;
     position: relative; 
-    width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
     justify-content: space-between;
@@ -187,6 +186,9 @@ ol {
 }
 
 @media screen and (min-width: 768px) {
+    .nav {
+       gap: 75px;
+    }
     .list-nav {
         display: flex;
         gap: 40px;
@@ -211,12 +213,13 @@ ol {
 
 }
 @media screen and (max-width: 767.98px) {
+    .nav {
+        width: 100%;
+    }
     .header {
        padding: 20px 16px;
     }
-    .list-mail-tel {
-        
-     }
+   
 }
 
 
@@ -245,6 +248,7 @@ screen and (min-resolution: 2dppx) {
        url(../images/hero-bg-mob@2x.jpg);
    }
 }
+
 .hero-title {
     color: var(--white-background);
     max-width: 320px;
@@ -1131,6 +1135,7 @@ screen and (min-resolution: 2dppx) {
     .menu-toggle {
       display: none;
     }
+    
   }
   
   .menu-toggle:hover,
