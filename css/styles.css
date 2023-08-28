@@ -134,6 +134,20 @@ ol {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.list-tel {
+    padding: 24px 0;
+    gap: 40px;
+    color: var(--dark);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    list-style: none;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 .list-nav-h {
    padding: 24px 0;
    gap: 40px;
@@ -218,8 +232,8 @@ ol {
     }
     .header {
        padding: 20px 16px;
-    }
-   
+    } 
+ 
 }
 
 
@@ -1116,22 +1130,44 @@ screen and (min-resolution: 2dppx) {
 /* mob menu */
 
 .menu-toggle {
-    min-height: 22px;
-    min-width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     outline: none; 
-    stroke: var(--dark);
-    
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    /* min-height: 22px;
+    min-width: 32px;
+     */ 
   }
+  .mobile-menu-icon {
+    stroke: var(--dark);    
+  }
+
+  .menu-close-icon {
+    background-color: var(--accent);
+    stroke-width: 1px;
+    fill: var(--dark);
+    opacity: 0.1;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+
+}
+
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768.98px) {
     .menu-toggle {
       display: none;
     }
@@ -1159,6 +1195,13 @@ screen and (min-resolution: 2dppx) {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
+
+  @media screen and (min-width: 767px) {
+    .menu-container {
+        display: none;
+    }
+    
+}
   
   .menu-container.is-open {
     transform: translateX(0);
