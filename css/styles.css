@@ -1136,6 +1136,7 @@ screen and (min-resolution: 2dppx) {
         display:flex;
         flex-direction: column; 
         width: 100%;
+        align-items: center;
         
       } 
 
@@ -1159,6 +1160,10 @@ screen and (min-resolution: 2dppx) {
         align-items: center; 
         gap: 24px; 
       }
+      .form-input {
+        width: 398px;
+    
+    }  
 }
 @media screen and (max-width: 1157px) {
     .footer-cont {
