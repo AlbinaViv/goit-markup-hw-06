@@ -444,8 +444,11 @@ screen and (min-resolution: 2dppx) {
   /*team-section*/
   .team-section {
     background-color: var(--light);
-    padding: 96px;
-}  
+    padding: 96px 0;
+} 
+.container-team {
+    max-width: 296px;
+}
 .team {
     color: var(--dark);
     font-size: 36px;
@@ -542,6 +545,9 @@ screen and (min-resolution: 2dppx) {
 
 
 @media screen and (min-width: 768px) {
+    .container-team {
+        max-width: 584px;
+    }
     .team-list {
         gap: 64px 24px;
         margin-top: 0;
@@ -789,10 +795,6 @@ screen and (min-resolution: 2dppx) {
      color: #FFFFFF;
      padding: 100px 0;
  }
- .tab {
-    display: flex;
-}
- 
  
  
  .link-logo-f {
@@ -837,7 +839,6 @@ screen and (min-resolution: 2dppx) {
 .soc-media-footer {
     display: flex; 
     gap: 16px; 
-
 }
 .link-footer-soc {
     display: flex;
@@ -1102,7 +1103,6 @@ screen and (min-resolution: 2dppx) {
 
 }
 
-
 @media screen and (min-width: 768px) {
     .footer-cont {
         display: flex;
@@ -1133,18 +1133,6 @@ screen and (min-resolution: 2dppx) {
         justify-content: center;
     
      }
-     .tab {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .tab-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
      .footer-cont-logo {
         text-align: center;
     }
@@ -1156,6 +1144,9 @@ screen and (min-resolution: 2dppx) {
         align-items: center;
         
       } 
+      .soc-media-footer {
+       justify-content: center;
+    }
 
       .footer-title {
         text-align: center;
@@ -1182,8 +1173,13 @@ screen and (min-resolution: 2dppx) {
     
     }  
 }
+@media screen and (max-width: 1157px) {
+    .footer-cont {
+       flex-direction: column;
+   }
+}
 @media only screen and (min-width: 768px) {
-.tab-box {
+    .tab {
     display: flex;
     gap: 24px;
 }
@@ -1192,53 +1188,36 @@ screen and (min-resolution: 2dppx) {
 /* mob menu */
 
 .menu-toggle {
-    margin: 0;
+    max-height: 22px;
+    max-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
     border-radius: 50%;
-    outline: none; 
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* min-height: 22px;
-    min-width: 32px;
-     */ 
+    outline: none;
   }
+
   .mobile-menu-icon {
     stroke: var(--dark); 
+    margin-bottom: 2px;
        
   }
-
   .menu-close-icon {
-    stroke-width: 1px;
-    stroke: var(--dark);
-    width: 8px;
-    height: 8px;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-   
-   border-radius: 50%; 
-   background-color: var(--accent);
-   cursor: pointer;
-   padding: 0; 
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   align-items: center;
-   justify-content: center;
-   position: absolute;
-   right: 24px;
-   border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: var(--primary-black-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+  .menu-toggle.js-close-menu {
+    min-height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
   
@@ -1316,7 +1295,7 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     gap: 56px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   
 .mobile-menu-navigation {
@@ -1351,7 +1330,7 @@ screen and (min-resolution: 2dppx) {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
-  .list-mobile-menu-tel :hover, 
+  .list-mobile-menu-tel:hover, 
 .list-mobile-menu-mail:focus {
     color: var(--pressed-state);
 }

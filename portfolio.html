@@ -13,24 +13,36 @@
     <link rel="stylesheet" href="./css/styles.css"/>
     </head>
 <body>
-    <!-- <header class="header">
-        <div class="container">
-        <nav class="nav">
-            <a class="link-logo link" href="./index.html">Web<span class="accent">Studio</span></a>
-            <ul class="list list-nav">
+    <header class="header">
+        <div class="header-container container">
+            <nav class="nav">
+             <a class="link-logo link" href="./index.html">Web<span class="accent">Studio</span></a>
+             <button class="menu-toggle js-open-menu"
+             aria-expanded="false"
+             aria-controls="mobile-menu" >
+             <svg class="mobile-menu-icon"
+             width="32"
+             height="22"
+               fill="currentColor"
+               viewBox="0 0 20 20"
+               xmlns="http://www.w3.org/2000/svg">
+             <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+           </button>
+             <ul class="list list-nav">
                 <li><a class="list-nav-h link" href="./index.html">Studio</a></li>
                 <li><a class="list-nav-h link current" href="./portfolio.html">Portfolio</a></li>
                 <li><a class="list-nav-h link" href="">Contacts</a></li>
-            </ul>
-        </nav>
-        <address class="navigation">
-            <ul class="list list-navigation">
+             </ul>
+            </nav>
+             <address class="navigation">
+               <ul class="list list-navigation">
                 <li><a class="list-mail-tel link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>   
                 <li><a class="list-mail-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+               </ul>
+             </address>
         </div>
-    </header> -->
+    </header>
     <main class="main">
         <section class="butt-section">
             <div class="container">
@@ -183,12 +195,13 @@
         </div>
         </section>
     </main>
-   <!--  <footer class="footer">
+    <footer class="footer">
         <div class="container footer-cont">
-            <div class="footer-cont-logo">
+            <div class="tab">
+             <div class="footer-cont-logo">
                 <a class="link-logo-f link" href="./index.html">Web<span class="accent-footer">Studio</span></a>        
                 <p class="footer-p"> Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-            </div>
+             </div>
               <div class="footer-cont-social_media">
                   <p class="footer-title">Social media</p>
                    <ul class="list soc-media-footer">
@@ -234,21 +247,103 @@
                      </li>
                   </ul>
               </div>
+            </div>
+            <div class="tab-footer">
               <div class="footer-subscribe">
-                <p class="footer-title-form">Subscribe</p>
-                <form class="form-footer-windov" name="issue_report_form" autocomplete="off">
-                    <label class="footer-title-input">
-                    <input class="form-input" type="email" name="username" placeholder="E-mail" />
-                    </label>
-                    <button class="form-button" type="submit">Subscribe
-                    <svg class="fram-footer-icons" width="24" height="24"> 
-                        <use href="./images/icons.svg#icon-Frame"></use>
-                    </svg>
-                    </button>
-                </form>
-          </div>
+                    <p class="footer-title-form">Subscribe</p>
+                    <form class="form-footer-windov" name="issue_report_form" autocomplete="off">
+                        <label class="footer-title-input">
+                        <input class="form-input" type="email" name="user-email" placeholder="E-mail" />
+                        </label>
+                        <button class="form-button" type="submit">Subscribe
+                        <svg class="fram-footer-icons" width="24" height="24"> 
+                            <use href="./images/icons.svg#icon-Frame"></use>
+                        </svg>
+                        </button>
+                    </form>
+              </div>
+            </div>
         </div>
     </footer>
-    <script src="./js/modal.js"></script> -->
+    <!-- mob menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-close-icon"
+             width="8"
+             height="8"
+               fill="currentColor"
+               viewBox="0 0 20 20"
+               xmlns="http://www.w3.org/2000/svg">
+             <use href="./images/icons.svg#icon-close-mob"></use>
+            </svg>
+        </button>
+        <ul class="list mobile-menu">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./index.html">Studio</a></li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a></li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a></li>
+        </ul>
+    </nav>
+    <address class="mobile-menu-navigation">
+        <ul class="list list-mobile-menu-navigation">
+            <li><a class="list-mobile-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li><a class="list-mobile-menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>   
+        </ul>
+    </address>
+    <div>
+        <ul class="list mobile-menu-soc-media">
+            <li class="icons-soc-media">
+               <a class="link link-footer-soc" href="http://instagram.com/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="instagram icon">
+               <svg class="soc_media-icons" width="24" height="24"> 
+                 <use href="./images/icons.svg#icon-instagram"></use>
+               </svg>
+               </a>
+            </li>
+            <li class="icons-soc-media">
+               <a class="link link-footer-soc" href="http://twitter.com/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="twitter icon">
+                <svg class="soc_media-icons" width="24" height="24">
+                   <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+               </a>
+            </li>
+            <li class="icons-soc-media">
+               <a class="link link-footer-soc" href="http://facebook.com/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="facebook icon">
+                <svg class="soc_media-icons" width="24" height="24">
+                   <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+               </a>
+            </li>
+            <li class="icons-soc-media">
+               <a class="link link-footer-soc" href="http://linkedin.com/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="linkedin icon">
+                <svg class="soc_media-icons" width="24" height="24">
+                   <use href="./images/icons.svg#icon-linkd"></use>
+                </svg>
+               </a>
+            </li>
+         </ul>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
