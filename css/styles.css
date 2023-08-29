@@ -1107,7 +1107,7 @@ screen and (min-resolution: 2dppx) {
     .form-footer-windov {
         display: flex;
         gap: 24px;
-    }
+      }
     
 }
 @media screen and (min-width: 1158px) {
@@ -1136,7 +1136,10 @@ screen and (min-resolution: 2dppx) {
      .footer-subscribe {
         display:flex;
         flex-direction: column; 
+        width: 100%;
+        
       } 
+
       .footer-title {
         text-align: center;
     }
@@ -1145,19 +1148,16 @@ screen and (min-resolution: 2dppx) {
     .footer-title-form {
         margin-top: 72px;
         justify-content: center;
-    }
-    .form-input {
-        
-    
+    } 
+    .form-button {
+        text-align: center;
+        justify-content: center;
+
     } 
     .form-footer-windov {
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-}
-.footer-title-input {
-    width: 100%;
-} 
+        align-items: center;  
+      }
+
 
 }
 
