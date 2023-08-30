@@ -1303,6 +1303,9 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.11;
     letter-spacing: 0.02em;
   }
+  .mobile-menu-link-st  {
+    color: var(--pressed-state);
+  }
 
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -1317,7 +1320,7 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     gap: 56px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   
 .mobile-menu-navigation {
@@ -1327,7 +1330,7 @@ screen and (min-resolution: 2dppx) {
   .list-mobile-menu-tel {
     display: block;
     padding-bottom: 40px;
-    color: var(--text);
+    color: var(--primary-dark);
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -1352,11 +1355,12 @@ screen and (min-resolution: 2dppx) {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
-  .list-mobile-menu-tel:hover, 
-.list-mobile-menu-mail:focus {
-    color: var(--pressed-state);
-}
-
+  @media only screen and (max-width: 427.98px){
+ .list-mobile-menu-tel {
+    min-width: 280px;
+} 
+} 
+  
    /*---modal windovs---*/
 
  .backdrop.is-hidden {
