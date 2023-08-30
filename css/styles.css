@@ -905,7 +905,6 @@ screen and (min-resolution: 2dppx) {
     gap: 16px;
     display: flex;
     flex-direction: column;
-    width: 100%;
 } 
 
 
@@ -914,7 +913,6 @@ screen and (min-resolution: 2dppx) {
 
 
 .form-input {
-    width: 100%;
     max-height: 40px;
     border-radius: 4px;
     border: 1px solid #fff;
@@ -930,7 +928,15 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 16px;
 
 } 
-
+@media (max-width: 767px) {
+    .form-input,
+    .footer-title-input,
+    .form-footer-windov,
+    .tab-footer {
+        width: 100%;
+    } 
+    
+}
 .form-button {
     display: flex;
     padding: 8px 24px;
@@ -1154,6 +1160,9 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         gap: 24px;
       }
+      .form-input {
+        width: 264px;
+    }
     
 }
 @media screen and (min-width: 1158px) {
@@ -1229,6 +1238,7 @@ screen and (min-resolution: 2dppx) {
    .cust {
     margin-top: 72px; 
   } 
+
 }
 @media only screen and (min-width: 768px) {
     .tab {
