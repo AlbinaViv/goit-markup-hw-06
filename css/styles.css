@@ -1215,6 +1215,9 @@ screen and (min-resolution: 2dppx) {
       
 }
 @media screen and (max-width: 1157px) {
+    .tab {
+        gap: 24px;
+    }
     .footer-cont {
        flex-direction: column;
    }
@@ -1225,7 +1228,6 @@ screen and (min-resolution: 2dppx) {
 @media only screen and (min-width: 768px) {
     .tab {
     display: flex;
-    gap: 24px;
     margin-bottom: 72px;
 }
 }
