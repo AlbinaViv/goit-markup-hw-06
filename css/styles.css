@@ -1184,7 +1184,7 @@ screen and (min-resolution: 2dppx) {
      .footer-subscribe {
         display:flex;
         flex-direction: column; 
-        width: 100%;
+        min-width: 100%;
         align-items: center;
         margin-top: 72px; 
       } 
