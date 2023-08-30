@@ -439,7 +439,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 
- @media screen and (max-width: 1158px) {
+ @media screen and (max-width: 1157px) {
     
     .doing-section {
         display: none;
@@ -996,6 +996,9 @@ screen and (min-resolution: 2dppx) {
     fill: var(--light);
     margin-left: 16px;
  }
+ .modal {
+    width: calc(100% - 30px);
+}
 
  .modal-caption {
     color: var(--dark);
@@ -1005,7 +1008,6 @@ screen and (min-resolution: 2dppx) {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 360px;
     margin-bottom: 16px; 
 }
 
@@ -1172,9 +1174,7 @@ screen and (min-resolution: 2dppx) {
     .footer-cont-logo {
         margin-right: 120px;
     }
-    .footer-p {
-    margin-bottom: 16px; 
-    }  
+     
     .footer-subscribe {
         margin-left: 80px;
     }   
@@ -1231,6 +1231,7 @@ screen and (min-resolution: 2dppx) {
 @media screen and (max-width: 1157px) {
     .tab {
         gap: 24px;
+
     }
     .footer-cont {
        flex-direction: column;
@@ -1245,6 +1246,14 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     margin-bottom: 72px;
 }
+}
+@media screen and (min-width: 1157px) {
+    .tab {
+        gap: 24px;
+        margin-bottom: 0px;
+
+
+    }
 }
 
 /* mob menu */
@@ -1305,6 +1314,7 @@ screen and (min-resolution: 2dppx) {
     width: 100vw;
     height: 100vh;
     padding: 40px;
+    padding-right: 35px;
     padding-top: 80px;
     background-color: var(--white-background);
     z-index: 999;
