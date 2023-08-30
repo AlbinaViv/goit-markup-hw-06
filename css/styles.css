@@ -474,7 +474,6 @@ screen and (min-resolution: 2dppx) {
 }
 .team-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 72px 24px;
 
    
@@ -563,15 +562,38 @@ screen and (min-resolution: 2dppx) {
     }
 }
 @media screen and (min-width: 1158px) {
+    .container-team {
+        max-width: 1158px;
+    }
     
     .team-section {
+        display: flex;
         padding: 120px 0;
+        
     }  
+    .team-list {
+        gap: 24px;
+        flex-basis: calc((100% - 72px) / 4);
+
+        
+    }
     .team-foto {
         flex-basis: calc((100% - 72px) / 4);
         
     } 
 }
+
+@media screen and (max-width: 1158px) {
+    
+
+    .team-list {
+        flex-wrap: wrap;
+
+        
+    }
+    
+}
+
 
  /* customers section */
 
