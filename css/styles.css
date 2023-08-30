@@ -188,7 +188,6 @@ ol {
         flex-direction: column;
     }
     .list-mail-tel {
-        padding: 24px 0;
         gap: 40px;
         color: var(--dark);
         font-size: 16px;
@@ -380,6 +379,10 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         justify-content: center;
 
+    }
+    .advantages {
+        text-align: inherit;
+    
     }
     
     .advan-list__item {
@@ -602,6 +605,8 @@ screen and (min-resolution: 2dppx) {
  .customers-section {
     padding: 96px 0;
 }
+
+
 .customers {
     color: var(--dark);
     font-size: 36px;
@@ -649,8 +654,11 @@ screen and (min-resolution: 2dppx) {
  }
 
 @media screen and (min-width: 768px) {
+    .container-customer {
+        max-width: 584px;
+    }
     .customers-list {
-        gap: 24px; 
+        gap: 72px 24px; 
     }
     .customers-list-client {
         width: 168px;
@@ -663,6 +671,10 @@ screen and (min-resolution: 2dppx) {
     .customers-section {
         padding: 120px 0;
     }
+    .container-customer {
+        max-width: 1158px;
+    }
+
     .customers-list-client {
         flex-basis: calc((100% - 5 * 24px) / 6);
     }
@@ -1130,6 +1142,7 @@ screen and (min-resolution: 2dppx) {
     .footer-cont {
         display: flex;
         align-items: baseline;
+        max-width: 584px;
     }
       
     .form-footer-windov {
@@ -1139,6 +1152,9 @@ screen and (min-resolution: 2dppx) {
     
 }
 @media screen and (min-width: 1158px) {
+    .footer-cont {
+        max-width: 1158px;
+    }
     .footer-cont-logo {
         margin-right: 120px;
     }
@@ -1158,6 +1174,7 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 428px;
     
      }
      .footer-cont-logo {
@@ -1201,7 +1218,7 @@ screen and (min-resolution: 2dppx) {
     .footer-cont {
        flex-direction: column;
    }
-   .footer-subscribe {
+   .cust {
     margin-top: 72px; 
   } 
 }
@@ -1209,6 +1226,7 @@ screen and (min-resolution: 2dppx) {
     .tab {
     display: flex;
     gap: 24px;
+    margin-bottom: 72px;
 }
 }
 
@@ -1326,9 +1344,8 @@ screen and (min-resolution: 2dppx) {
     display: block;
     
 }
-  .list-mobile-menu-tel {
+  .link-mobile-menu-tel {
     display: block;
-    padding-bottom: 40px;
     color: var(--primary-dark);
     font-size: 36px;
     font-style: normal;
@@ -1340,8 +1357,13 @@ screen and (min-resolution: 2dppx) {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
+  .li-mobile-menu-tel {
+    margin-bottom: 40px;
+    
+  }
 
-  .list-mobile-menu-mail {
+
+  .link-mobile-menu-mail {
     display: block;
     color: var(--text);
     font-size: 20px;
@@ -1354,10 +1376,15 @@ screen and (min-resolution: 2dppx) {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
-  @media only screen and (max-width: 427.98px){
- .list-mobile-menu-tel {
-    min-width: 280px;
-} 
+ .mobile-menu-soc-media {
+    display: flex;
+    justify-content: space-between;
+
+ }
+ @media only screen and (max-width: 427.98px) {
+    .link-mobile-menu-tel {
+     font-size: 24px;
+ }
 } 
   
    /*---modal windovs---*/
